@@ -47,54 +47,85 @@
     </div>
   </aside>
   <!-- Main Content -->
-  <div class="lg:py-4 b-4 lg:pr-4 lg:p-0 p-4 lg:ml-64 h-[93vh]">
-    <!-- Content Header -->
-    <header class="flex justify-end items-start gap-3 h-12">
-      <!-- Theme Toggle -->
-      <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium dark:text-gray-300 text-gray-700 rounded-full hover:bg-gray-500/20 transition duration-300 ease-in-out focus:outline-none focus:bg-gray-200" data-hs-theme-click-value="dark">
-        <span class="group inline-flex shrink-0 justify-center items-center size-8">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-          </svg>
-        </span>
-      </button>
-      <button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium dark:text-gray-300 text-gray-700 rounded-full hover:bg-gray-500/20 transition duration-300 ease-in-out focus:outline-none focus:bg-gray-200" data-hs-theme-click-value="light">
-        <span class="group inline-flex shrink-0 justify-center items-center size-8">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2"></path>
-            <path d="M12 20v2"></path>
-            <path d="m4.93 4.93 1.41 1.41"></path>
-            <path d="m17.66 17.66 1.41 1.41"></path>
-            <path d="M2 12h2"></path>
-            <path d="M20 12h2"></path>
-            <path d="m6.34 17.66-1.41 1.41"></path>
-            <path d="m19.07 4.93-1.41 1.41"></path>
-          </svg>
-        </span>
-      </button>
-      <!-- Profile Dropdown -->
-      <span class="inline-flex items-center justify-center size-8 text-xs font-semibold rounded-full leading-none border border-gray-300 bg-indigo-600 text-white">
-        FM
-      </span>
-    </header>
-    <div class="dark:bg-gray-800 bg-gray-100 border dark:border-gray-700/50 p-8 rounded-xl h-full custom-scrollbar overflow-auto">
-      <!-- Tab 1 -->
-      <div id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-item">
-        <?php
-        include_once './dashboard.php';
-        ?>
-      </div>
-      <!-- Tab 2 -->
-      <div id="card-type-tab-2" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-2">
+  <div class="lg:py-4 b-4 lg:pr-4 lg:p-0 p-4 lg:ml-64 h-screen">
+    <div class="relative dark:bg-gray-800 bg-gray-100 border dark:border-gray-700/50 rounded-xl h-full custom-scrollbar overflow-auto">
+      <!-- Content Header -->
+      <header class="dark:bg-gray-800 bg-gray-100 sticky top-0 py-4 px-8 flex justify-between items-center dark:border-gray-700/60 border-b w-full">
+        <!-- Breadcrumbs -->
+        <ol class="flex items-center whitespace-nowrap">
+          <li class="inline-flex items-center">
+            <a class="flex items-center text-sm text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600 dark:text-gray-500 dark:hover:text-indigo-500 dark:focus:text-indigo-500" href="#">
+              Dashboard
+            </a>
+            <svg class="shrink-0 mx-2 size-4 text-gray-400 dark:text-gray-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </li>
+          <li class="inline-flex items-center">
+            <a class="flex items-center text-sm text-gray-500 hover:text-indigo-600 focus:outline-none focus:text-indigo-600 dark:text-gray-500 dark:hover:text-indigo-500 dark:focus:text-indigo-500" href="#">
+              App Center
+              <svg class="shrink-0 mx-2 size-4 text-gray-400 dark:text-gray-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="inline-flex items-center text-sm font-semibold text-gray-800 truncate dark:text-gray-200" aria-current="page">
+            Application
+          </li>
+        </ol>
+        <!-- End of Breadcrumbs -->
+        <div class="flex items-center gap-3">
+          <!-- Theme Toggle -->
+          <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium dark:text-gray-300 text-gray-700 rounded-full hover:bg-gray-500/20 transition duration-300 ease-in-out focus:outline-none focus:bg-gray-200" data-hs-theme-click-value="dark">
+            <span class="group inline-flex shrink-0 justify-center items-center size-8">
+              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </svg>
+            </span>
+          </button>
+          <button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium dark:text-gray-300 text-gray-700 rounded-full hover:bg-gray-500/20 transition duration-300 ease-in-out focus:outline-none focus:bg-gray-200" data-hs-theme-click-value="light">
+            <span class="group inline-flex shrink-0 justify-center items-center size-8">
+              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+            </span>
+          </button>
+          <!-- Profile Dropdown -->
+          <span class="inline-flex items-center justify-center size-8 text-xs font-semibold rounded-full leading-none border border-gray-300 bg-indigo-600 text-white">
+            FM
+          </span>
+        </div>
+      </header>
+      <!-- End of Content Header -->
+      <!-- Tab Content -->
+      <div class="p-8">
+        <!-- Tab 1 -->
+        <div id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-item">
+          <?php
+          include_once './dashboard.php';
+          ?>
+        </div>
+        <!-- Tab 2 -->
+        <div id="card-type-tab-2" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-2">
 
-      </div>
-      <!-- Tab 3 -->
-      <div id="card-type-tab-3" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-3">
+        </div>
+        <!-- Tab 3 -->
+        <div id="card-type-tab-3" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-3">
 
+        </div>
       </div>
+      <!-- End of Tab Content -->
     </div>
   </div>
+  <!-- End of Main Content -->
   <script src="../node_modules/preline/dist/preline.js"></script>
 </body>
 
