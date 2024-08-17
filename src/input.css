@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-scrollbar {
+  overflow-y: auto; /* Added semicolon */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Added semicolon */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply rounded-sm bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-neutral-600;
+}
