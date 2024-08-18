@@ -23,21 +23,21 @@
     </svg>
     <!-- Navigation Buttons -->
     <div class="space-y-2">
-      <span class="text-gray-400 text-xs font-medium">Active tabs</span>
+      <span class="dark:text-gray-400 text-gray-600 text-xs">Active tabs</span>
       <nav class="flex flex-col gap-1" aria-label="Tabs" role="tablist" aria-orientation="vertical">
-        <button type="button" class="hs-tab-active:bg-indigo-500/10 hs-tab-active:border-l-indigo-500 hs-tab-active:border-l-2 hs-tab-active:text-indigo-400 py-2.5 px-4 inline-flex items-center gap-2.5 hover:bg-gray-700/10 text-sm font-medium text-center text-gray-400 rounded-md hover:text-gray-200 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none active transition ease-in-out duration-300" id="dashboard-item" aria-selected="true" data-hs-tab="#dashboard-tab" aria-controls="dashboard-tab" role="tab">
+        <button type="button" class="hs-tab-active:bg-indigo-500/10 dark:hs-tab-active:text-indigo-400 hs-tab-active:text-indigo-500 py-2.5 px-4 inline-flex items-center gap-2.5 text-sm font-medium text-center dark:text-gray-400 text-gray-600 rounded-md hover:text-gray-200 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none active transition ease-in-out duration-300" id="dashboard-item" aria-selected="true" data-hs-tab="#dashboard-tab" aria-controls="dashboard-tab" role="tab">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
           </svg>
           Dashboard
         </button>
-        <button type="button" class="hs-tab-active:bg-indigo-500/10 hs-tab-active:border-l-indigo-500 hs-tab-active:border-l-2 hs-tab-active:text-indigo-400 py-2.5 px-4 inline-flex items-center gap-2.5 hover:bg-gray-700/10 text-sm font-medium text-center text-gray-400 rounded-md hover:text-gray-200 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-300" id="card-type-tab-item-2" aria-selected="false" data-hs-tab="#card-type-tab-2" aria-controls="card-type-tab-2" role="tab">
+        <button type="button" class="hs-tab-active:bg-indigo-500/10 dark:hs-tab-active:text-indigo-400 hs-tab-active:text-indigo-500 py-2.5 px-4 inline-flex items-center gap-2.5 text-sm font-medium text-center dark:text-gray-400 text-gray-600 rounded-md dark:hover:text-gray-200 hover:text-indigo-500 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-300" id="components-item" aria-selected="false" data-hs-tab="#components-tab" aria-controls="components-tab" role="tab">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
           </svg>
-          Di ko na alam
+          Components
         </button>
-        <button type="button" class="hs-tab-active:bg-indigo-500/10 hs-tab-active:border-l-indigo-500 hs-tab-active:border-l-2 hs-tab-active:text-indigo-400 py-2.5 px-4 inline-flex items-center gap-2.5 hover:bg-gray-700/10 text-sm font-medium text-center text-gray-400 rounded-md hover:text-gray-200 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-300" id="card-type-tab-item-3" aria-selected="false" data-hs-tab="#card-type-tab-3" aria-controls="card-type-tab-3" role="tab">
+        <button type="button" class="hs-tab-active:bg-indigo-500/10 dark:hs-tab-active:text-indigo-400 hs-tab-active:text-indigo-500 py-2.5 px-4 inline-flex items-center gap-2.5 text-sm font-medium text-center dark:text-gray-400 text-gray-600 rounded-md dark:hover:text-gray-200 hover:text-indigo-500 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-300" id="card-type-tab-item-3" aria-selected="false" data-hs-tab="#card-type-tab-3" aria-controls="card-type-tab-3" role="tab">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
@@ -153,8 +153,10 @@
           ?>
         </div>
         <!-- Tab 2 -->
-        <div id="card-type-tab-2" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-2">
-
+        <div id="components-tab" class="hidden" role="tabpanel" aria-labelledby="components-item">
+          <?php
+          include_once './components.php';
+          ?>
         </div>
         <!-- Tab 3 -->
         <div id="card-type-tab-3" class="hidden" role="tabpanel" aria-labelledby="card-type-tab-item-3">
