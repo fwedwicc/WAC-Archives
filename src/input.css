@@ -2,30 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------- Typography -------- */
+h2 {
+  @apply text-3xl dark:text-gray-200 text-gray-800 leading-none font-semibold;
+}
+p {
+  @apply dark:text-gray-400 text-gray-600;
+}
+/* -------- // Typography -------- */
+
+/* ------------------------ Input Variants ------------------------ */
+/* -------- Float Input Variant -------- */
+.float-input {
+  @apply p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-100/70 dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:focus:ring-indigo-500 transition duration-300 ease-in-out
+  focus:pt-6
+  focus:pb-2
+  [&:not(:placeholder-shown)]:pt-6
+  [&:not(:placeholder-shown)]:pb-2
+  autofill:pt-6
+  autofill:pb-2;
+}
+.float-label {
+  @apply absolute top-0 start-0 p-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-gray-200 peer-disabled:opacity-50 peer-disabled:pointer-events-none
+  peer-focus:scale-90
+  peer-focus:translate-x-0.5
+  peer-focus:-translate-y-1.5
+  peer-focus:text-gray-500 dark:peer-focus:text-gray-500
+  peer-[:not(:placeholder-shown)]:scale-90
+  peer-[:not(:placeholder-shown)]:translate-x-0.5
+  peer-[:not(:placeholder-shown)]:-translate-y-1.5
+  peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-gray-500 dark:text-gray-400;
+}
+/* -------- // Float Input Variant -------- */
+/* -------- Defalt Input Variant -------- */
+.default-input {
+  @apply py-3 px-4 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+}
+.input-label {
+  @apply block text-sm font-medium mb-1.5 text-gray-700 dark:text-gray-100;
+}
+/* -------- // Defalt Input Variant -------- */
+/* -------- // Input Variant with Icon -------- */
+.icon-input {
+  @apply py-3 px-4 ps-11 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+}
+.icon-input-svg {
+  @apply absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none;
+}
+/* -------- // Input Variant with Icon -------- */
+
+/* ------------------------ // Input Variants ------------------------ */
+
+/* ------------------------ Scrollbar Styles ------------------------ */
 .custom-scrollbar {
   overflow-y: auto; /* Added semicolon */
 }
-
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px; /* Added semicolon */
 }
-
 .custom-scrollbar::-webkit-scrollbar-track {
   @apply rounded-sm bg-transparent;
 }
-
 .custom-scrollbar::-webkit-scrollbar-thumb {
   @apply rounded-sm bg-gray-600;
 }
-
 .invisible-scrollbar::-webkit-scrollbar {
   width: 1px; /* Added semicolon */
 }
-
 .invisible-scrollbar::-webkit-scrollbar-track {
   @apply rounded-sm bg-transparent;
 }
-
 .invisible-scrollbar::-webkit-scrollbar-thumb {
   @apply rounded-sm bg-transparent;
 }
+/* ------------------------ // Scrollbar Styles ------------------------ */
