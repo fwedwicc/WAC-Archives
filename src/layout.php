@@ -12,7 +12,7 @@
 
 <body class="dark:bg-[#192231] bg-gray-50">
   <!-- Desktop Sidebar -->
-  <aside class="lg:block hidden w-64 fixed h-screen p-5 space-y-7">
+  <aside class="lg:block hidden w-64 fixed h-screen p-5 space-y-7 overflow-y-auto invisible-scrollbar">
     <?php include './sidebar.php'; ?>
   </aside>
   <!-- // Desktop Sidebar -->

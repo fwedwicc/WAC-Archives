@@ -24,4 +24,4 @@
     </button>
   </nav>
 </div>
-<!-- End of Navigation Buttons -->
+<!-- // Navigation Buttons -->
