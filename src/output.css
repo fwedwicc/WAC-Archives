@@ -2321,6 +2321,22 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:bottom-0 {
     bottom: 0px;
