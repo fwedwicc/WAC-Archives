@@ -57,6 +57,17 @@ p {
 /* -------- // Select Input Variant -------- */
 /* ------------------------ // Input Variants ------------------------ */
 
+/* -------- Radio Input -------- */
+.radio-input {
+  @apply shrink-0 bg-gray-100/70 border-gray-200 rounded-full text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:checked:bg-indigo-500 dark:checked:border-indigo-500 dark:focus:ring-offset-gray-800 transition duration-300;
+}
+/* -------- // Radio Input -------- */
+/* -------- Checkbox Input -------- */
+.checkbox-input {
+  @apply shrink-0 bg-gray-100/70 border-gray-200 rounded text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:checked:bg-indigo-500 dark:checked:border-indigo-500 dark:focus:ring-offset-gray-800 transition duration-300 ease-in-out;
+}
+/* -------- // Checkbox Input -------- */
+
 /* ------------------------ Scrollbar Styles ------------------------ */
 .custom-scrollbar {
   overflow-y: auto; /* Added semicolon */

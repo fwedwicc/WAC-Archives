@@ -39,10 +39,6 @@
         <div id="components-tab" class="hidden" role="tabpanel" aria-labelledby="components-item">
           <?php include_once './components.php'; ?>
         </div>
-        <!-- Tab 3 -->
-        <div id="forms-tab" class="hidden" role="tabpanel" aria-labelledby="forms-item">
-          <?php include_once './forms.php'; ?>
-        </div>
       </div>
       <!-- // Tab Content -->
     </div>

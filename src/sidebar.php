@@ -16,12 +16,6 @@
       </svg>
       Components
     </button>
-    <button type="button" class="hs-tab-active:bg-indigo-500/10 dark:hs-tab-active:text-indigo-400 hs-tab-active:text-indigo-500 py-2.5 px-4 inline-flex items-center gap-2.5 text-sm font-medium text-center dark:text-gray-400 text-gray-600 rounded-md dark:hover:text-gray-200 hover:text-indigo-500 focus:outline-none focus:text-gray-700 disabled:opacity-50 disabled:pointer-events-none transition ease-in-out duration-300" id="forms-item" data-tab-id="forms-tab" data-hs-tab="#forms-tab" aria-controls="forms-tab" role="tab">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9" />
-      </svg>
-      Forms
-    </button>
   </nav>
 </div>
 <!-- // Navigation Buttons -->
