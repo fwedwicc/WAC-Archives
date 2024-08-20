@@ -51,6 +51,36 @@
         <p class="text-sm text-green-500 dark:text-green-400 mt-1.5" id="input-success-helper">Looks good!</p>
       </div>
       <!-- // Success Input -->
+
+      <!-- Search Input -->
+      <div class="relative">
+        <input type="text" class="icon-input peer" placeholder="Search somthing...">
+        <div class="icon-input-svg">
+          <svg class="shrink-0 size-4 text-gray-500 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </div>
+      </div>
+      <!-- // Search Input -->
+
+      <!-- Textarea -->
+      <div>
+        <label for="textarea" class="input-label">Comment</label>
+        <textarea id="textarea" class="default-input" rows="3" placeholder="Say hi..."></textarea>
+      </div>
+      <!-- // Textarea -->
+
+      <!-- Select -->
+      <div>
+        <label for="default-input" class="input-label">Gender</label>
+        <select class="select-input">
+          <option selected="">Open this select menu</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>LGBTQ+</option>
+        </select>
+      </div>
+      <!-- // Select -->
     </div>
   </div>
 </div>

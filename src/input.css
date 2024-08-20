@@ -42,7 +42,7 @@ p {
   @apply block text-sm font-medium mb-1.5 text-gray-700 dark:text-gray-100;
 }
 /* -------- // Defalt Input Variant -------- */
-/* -------- // Input Variant with Icon -------- */
+/* -------- Input Variant with Icon -------- */
 .icon-input {
   @apply py-3 px-4 ps-11 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
 }
@@ -50,7 +50,11 @@ p {
   @apply absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none;
 }
 /* -------- // Input Variant with Icon -------- */
-
+/* -------- Select Input Variant -------- */
+.select-input {
+  @apply py-3 px-4 pe-9 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#1b2533] dark:border-gray-700 dark:text-gray-400 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+}
+/* -------- // Select Input Variant -------- */
 /* ------------------------ // Input Variants ------------------------ */
 
 /* ------------------------ Scrollbar Styles ------------------------ */

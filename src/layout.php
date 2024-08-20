@@ -25,10 +25,12 @@
   <div class="lg:py-4 b-4 lg:pr-4 lg:p-0 p-4 lg:ml-64 h-screen">
     <div class="relative dark:bg-gray-800 bg-white border dark:border-gray-700/50 border-gray-200 rounded-xl h-full custom-scrollbar overflow-auto">
       <!-- Content Header -->
-      <?php include './header.php'; ?>
+      <header class="dark:bg-gray-800/70 backdrop-blur-md bg-white/70 sticky top-0 md:py-4 py-3 md:px-8 px-4 flex justify-between items-center dark:border-gray-700/60 border-gray-200 border-b w-full z-20">
+        <?php include './header.php'; ?>
+      </header>
       <!-- // Content Header -->
       <!-- Tab Content -->
-      <div class="md:p-8 p-4">
+      <div class="md:p-8 p-4 z-10">
         <!-- Tab 1 -->
         <div id="dashboard-tab" role="tabpanel" aria-labelledby="dashboard-item">
           <?php include_once './dashboard.php'; ?>

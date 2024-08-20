@@ -1,4 +1,3 @@
-<header class="dark:bg-gray-800/70 backdrop-blur-md bg-white/70 sticky top-0 md:py-4 py-3 md:px-8 px-4 flex justify-between items-center dark:border-gray-700/60 border-gray-200 border-b w-full">
   <div>
     <!-- Sidebar Toggle Button for Mobile -->
     <button type="button" class="lg:hidden flex shrink-0 justify-center items-center gap-2 size-8 text-sm font-medium rounded-lg border border-transparent dark:text-gray-400 text-gray-600 hover:bg-gray-400/20 dark:hover:bg-gray-400/20 focus:ring-2 focus:ring-gray-400/20 focus:outline-none disabled:opacity-50 disabled:pointer-events-none transition duration-300 ease-in-out" aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-offcanvas-custom-backdrop-color" data-hs-overlay="#hs-offcanvas-custom-backdrop-color">
@@ -75,4 +74,3 @@
     </div>
     <!-- End of Profile Dropdown -->
   </div>
-</header>
