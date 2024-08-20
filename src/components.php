@@ -123,16 +123,16 @@
     <!-- Third Column -->
     <div class="space-y-4">
       <div class="flex gap-2.5">
-        <button type="button" class="py-3 px-4 inline-flex items-center text-sm font-medium rounded-lg border border-transparent bg-indigo-500 text-white focus:ring-2 focus:ring-indigo-400 hover:bg-indigo-600 focus:outline-none disabled:opacity-50 disabled:pointer-events-none transition duration-300 ease-in-out">
+        <button type="button" class="btn btn-primary">
           Primary
         </button>
-        <button type="button" class="py-3 px-4 inline-flex items-center text-sm font-medium rounded-lg border border-transparent bg-indigo-500/10 dark:text-indigo-400 text-indigo-500 focus:ring-2 focus:ring-indigo-500/30 hover:bg-indigo-500/20 focus:outline-none disabled:opacity-50 disabled:pointer-events-none transition duration-300 ease-in-out">
+        <button type="button" class="btn btn-secondary">
           Secondary
         </button>
-        <button type="button" class="py-3 px-4 inline-flex items-center text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-indigo-600 hover:text-indigo-400 focus:ring-2 focus:ring-indigo-400/80 focus:outline-none focus:border-indigo-600 focus:text-indigo-600 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-gray-300 dark:hover:text-indigo-500 dark:hover:border-indigo-600 dark:focus:text-indigo-500 dark:focus:border-indigo-600 transition duration-300 ease-in-out">
+        <button type="button" class="btn btn-outline">
           Outline
         </button>
-        <button type="button" class="py-3 px-4 inline-flex items-center text-sm font-medium rounded-lg border border-transparent text-indigo-600 hover:bg-indigo-100 hover:text-indigo-800 focus:outline-none focus:bg-indigo-100 focus:text-indigo-800 disabled:opacity-50 disabled:pointer-events-none dark:text-indigo-500 dark:hover:bg-indigo-800/30 dark:hover:text-indigo-400 dark:focus:bg-indigo-800/30 dark:focus:text-indigo-400">
+        <button type="button" class="btn btn-ghost">
           Ghost
         </button>
       </div>
