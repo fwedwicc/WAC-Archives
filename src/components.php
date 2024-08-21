@@ -122,7 +122,8 @@
     <!-- // Second Column -->
     <!-- Third Column -->
     <div class="space-y-4">
-      <div class="flex gap-2.5">
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-2.5">
         <button type="button" class="btn btn-primary">
           Primary
         </button>
@@ -136,6 +137,23 @@
           Ghost
         </button>
       </div>
+      <!-- // Buttons -->
+      <!-- Button Color Variants -->
+      <div class="flex flex-wrap gap-2.5">
+        <button type="button" class="btn btn-success">
+          Success
+        </button>
+        <button type="button" class="btn btn-info">
+          Info
+        </button>
+        <button type="button" class="btn btn-warning">
+          Warning
+        </button>
+        <button type="button" class="btn btn-error">
+          Error
+        </button>
+      </div>
+      <!-- // Button Color Variants -->
     </div>
     <!-- // Third Column -->
   </div>
