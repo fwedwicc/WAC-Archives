@@ -166,4 +166,52 @@
     </div>
     <!-- // Third Column -->
   </div>
+  <!-- Table -->
+
+  <div class="flex flex-col">
+    <div class="-m-1.5 overflow-x-auto">
+      <div class="p-1.5 min-w-full inline-block align-middle">
+        <div class="border rounded-lg overflow-hidden dark:border-gray-700">
+          <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+            <thead class="bg-gray-50 dark:bg-gray-700/40">
+              <tr>
+                <th scope="col" class="text-start tbl-header">Name</th>
+                <th scope="col" class="text-start tbl-header">Age</th>
+                <th scope="col" class="text-start tbl-header">Address</th>
+                <th scope="col" class="text-end tbl-header">Action</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+              <tr>
+                <td class="tbl-data font-medium">John Brown</td>
+                <td class="tbl-data">45</td>
+                <td class="tbl-data">New York No. 1 Lake Park</td>
+                <td class="tbl-data text-end">
+                  <button type="button" class="tbl-btn success">Success</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="tbl-data font-medium">Jim Green</td>
+                <td class="tbl-data">27</td>
+                <td class="tbl-data">London No. 1 Lake Park</td>
+                <td class="tbl-data text-end space-x-4">
+                  <button type="button" class="tbl-btn info">View</button>
+                  <button type="button" class="tbl-btn error">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="tbl-data font-medium">Joe Black</td>
+                <td class="tbl-data">31</td>
+                <td class="tbl-data">Sidney No. 1 Lake Park</td>
+                <td class="tbl-data text-end">
+                  <button type="button" class="tbl-btn warning">Warning</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // Table -->
 </div>
