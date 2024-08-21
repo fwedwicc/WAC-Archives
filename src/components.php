@@ -40,7 +40,7 @@
       <!-- Error Input -->
       <div>
         <label for="input-error" class="input-label">Email</label>
-        <input type="text" id="input-error" name="input-error" class="py-3 px-4 block w-full border-red-500 bg-gray-100/70 rounded-lg text-sm dark:bg-gray-900/30 dark:border-red-500 dark:text-gray-400" disabled required="" aria-describedby="input-error-helper">
+        <input type="text" id="input-error" name="input-error" class="py-2.5 px-4 block w-full border-red-500 bg-gray-100/70 rounded-lg text-sm dark:bg-gray-900/30 dark:border-red-500 dark:text-gray-400" disabled required="" aria-describedby="input-error-helper">
         <p class="text-sm text-red-500 dark:text-red-400 mt-1.5" id="input-error-helper">Please enter a valid email address.</p>
       </div>
       <!-- // Error Input -->
@@ -48,7 +48,7 @@
       <!-- Success Input -->
       <div>
         <label for="input-success" class="input-label">Email</label>
-        <input type="text" id="input-success" name="input-success" class="py-3 px-4 block w-full border-green-500 bg-gray-100/70 rounded-lg text-sm dark:bg-gray-900/30 dark:border-green-500 dark:text-gray-400" disabled required="" aria-describedby="input-success-helper">
+        <input type="text" id="input-success" name="input-success" class="py-2.5 px-4 block w-full border-green-500 bg-gray-100/70 rounded-lg text-sm dark:bg-gray-900/30 dark:border-green-500 dark:text-gray-400" disabled required="" aria-describedby="input-success-helper">
         <p class="text-sm text-green-500 dark:text-green-400 mt-1.5" id="input-success-helper">Looks good!</p>
       </div>
       <!-- // Success Input -->
@@ -154,6 +154,15 @@
         </button>
       </div>
       <!-- // Button Color Variants -->
+      <!-- Badges -->
+      <div class="flex flex-wrap gap-2.5">
+        <span class="badge badge-base">Base</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-error">Error</span>
+      </div>
+      <!-- // Badges -->
     </div>
     <!-- // Third Column -->
   </div>

@@ -14,7 +14,7 @@ p {
 /* ------------------------ Button Variants ------------------------ */
 /* Button base */
 .btn {
-  @apply py-3 px-4 inline-flex items-center text-sm font-medium rounded-lg focus:ring-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none transition duration-300 ease-in-out;
+  @apply py-2.5 px-4 inline-flex items-center text-sm font-medium rounded-md focus:ring-2 focus:outline-none disabled:opacity-50 disabled:pointer-events-none transition duration-300 ease-in-out;
 }
 /* Primary Variant */
 .btn-primary {
@@ -49,7 +49,32 @@ p {
   @apply border border-transparent bg-red-500/70 text-white  focus:ring-red-400 hover:bg-red-500/90;
 }
 /* ------------------------ // Button Variants ------------------------ */
-
+/* ------------------------ Badge Variants ------------------------ */
+/* Badge Base */
+.badge {
+  @apply inline-flex items-center rounded-md border px-2.5 py-1 text-xs;
+}
+/* Base Variant */
+.badge-base {
+  @apply dark:border-indigo-500/20 border-indigo-200 dark:bg-indigo-500/10 bg-indigo-100 dark:text-indigo-400 text-indigo-800;
+}
+/* Success Variant */
+.badge-success {
+  @apply dark:border-green-500/20 border-green-200 dark:bg-green-500/10 bg-green-100 dark:text-green-400 text-green-800;
+}
+/* Info Variant */
+.badge-info {
+  @apply dark:border-blue-500/20 border-blue-200 dark:bg-blue-500/10 bg-blue-100 dark:text-blue-400 text-blue-800;
+}
+/* Warning Variant */
+.badge-warning {
+  @apply dark:border-yellow-500/20 border-yellow-200 dark:bg-yellow-500/10 bg-yellow-100 dark:text-yellow-400 text-yellow-800;
+}
+/* Error Variant */
+.badge-error {
+  @apply dark:border-red-500/20 border-red-200 dark:bg-red-500/10 bg-red-100 dark:text-red-400 text-red-800;
+}
+/* ------------------------ // Badge Variants ------------------------ */
 /* ------------------------ Input Variants ------------------------ */
 /* -------- Float Input Variant -------- */
 .float-input {
@@ -75,7 +100,7 @@ p {
 /* -------- // Float Input Variant -------- */
 /* -------- Defalt Input Variant -------- */
 .default-input {
-  @apply py-3 px-4 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+  @apply py-2.5 px-4 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
 }
 .input-label {
   @apply block text-sm font-medium mb-1.5 text-gray-700 dark:text-gray-100;
@@ -83,7 +108,7 @@ p {
 /* -------- // Defalt Input Variant -------- */
 /* -------- Input Variant with Icon -------- */
 .icon-input {
-  @apply py-3 px-4 ps-11 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+  @apply py-2.5 px-4 ps-11 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900/30 dark:border-gray-700 dark:text-gray-200 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
 }
 .icon-input-svg {
   @apply absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none;
@@ -91,7 +116,7 @@ p {
 /* -------- // Input Variant with Icon -------- */
 /* -------- Select Input Variant -------- */
 .select-input {
-  @apply py-3 px-4 pe-9 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#1b2533] dark:border-gray-700 dark:text-gray-400 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
+  @apply py-2.5 px-4 pe-9 block w-full bg-gray-100/70 border-gray-200 rounded-lg text-sm focus:border-indigo-500 focus:ring-indigo-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-[#1b2533] dark:border-gray-700 dark:text-gray-400 dark:placeholder-gray-500 dark:focus:ring-indigo-500 transition duration-300 ease-in-out;
 }
 /* -------- // Select Input Variant -------- */
 /* ------------------------ // Input Variants ------------------------ */
