@@ -10,22 +10,23 @@
 
 <body class="bg-indigo-50/50">
   <div class="flex justify-center items-center md:min-h-screen p-4">
+    <!-- Main Container -->
     <div class="bg-white shadow-2xl shadow-indigo-300/20 w-full max-w-[85rem] p-1 rounded-3xl">
       <div class="grid md:grid-cols-2 grid-cols-1">
+        <!-- Left illustration -->
         <aside class="relative md:h-full h-[20rem]">
-          <img class="absolute z-0 h-full w-full rounded-[1.4rem] object-cover p-2"
-            src="https://github.com/fwedwicc/WAC-Archives/blob/main/src/assets/com-gu-login.png"
+          <img class="absolute z-0 h-full w-full rounded-[1.4rem] object-cover p-2" src="/src/assets/com-gu-login.png"
             alt="Sample Illustration" />
           <div class="absolute bottom-7 mx-7 md:bottom-10 md:mx-10">
-            <h1 class="mb-4 text-[2.6rem] font-bold leading-none text-zinc-200 md:text-[3.6rem]">Less is more.</h1>
-            <span class="text-sm text-zinc-300">fmUI is a comprehensive collection of free Tailwind CSS components and
-              templates
-              for your projects. With diverse components and sample pages, you can develop websites, web apps, and more.
-              Explore
-              our selection to enhance your development process with ease and flexibility.</span>
+            <h1 class="mb-3.5 text-[2.6rem] font-bold leading-none text-white md:text-[3.6rem]">COM-GU</h1>
+            <p class="text-sm text-white w-full max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+              aliquid
+              voluptates consequatur earum saepe incidunt alias laboriosam porro illum doloremque, voluptatibus adipisci
+              id, quae totam nobis? Ratione delectus unde cum!</p>
           </div>
         </aside>
         <main class="flex items-center justify-center">
+          <!-- Form -->
           <form class="flex w-full max-w-md flex-col items-center justify-center px-7 py-20">
             <div class="w-full space-y-8">
               <div class="flex flex-col items-center gap-4">
@@ -38,36 +39,46 @@
                 </div>
               </div>
               <div class="flex flex-col gap-6">
+                <!-- Username -->
                 <div class="flex flex-col gap-2">
-                  <span class="text-sm font-medium text-zinc-700">Email Address</span>
-                  <input type="email" placeholder="john@email.com"
-                    class="h-10 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-neutral-500" />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <span class="text-sm font-medium text-zinc-700">Password</span>
+                  <label for="username" class="text-sm font-medium text-zinc-700">Username</label>
                   <div class="relative w-full">
-                    <input type="password" placeholder="•••••••••••"
-                      class="h-10 w-full rounded-md border border-neutral-200 bg-neutral-100 px-4 pr-10 text-sm transition duration-300 ease-in-out focus:border-neutral-500 focus:ring-neutral-500" />
-                    <button class="absolute right-0 top-1/2 h-full -translate-y-1/2 transform rounded-full px-2">
-                      <svg class="h-auto w-4 text-neutral-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                          d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06l-18-18ZM22.676 12.553a11.249 11.249 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.217 11.217 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113Z" />
-                        <path
-                          d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0 1 15.75 12ZM12.53 15.713l-4.243-4.244a3.75 3.75 0 0 0 4.244 4.243Z" />
-                        <path
-                          d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 0 0-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 0 1 6.75 12Z" />
+                    <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4 text-indigo-500">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                       </svg>
-                    </button>
+                    </div>
+                    <input type="text" id="username"
+                      class="w-full rounded-lg border border-indigo-200 bg-indigo-50/50 px-3 py-2 ps-9 text-sm transition duration-300 ease-in-out focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 placeholder:text-indigo-800/40"
+                      placeholder="Your username" required />
+                  </div>
+                </div>
+                <!-- Password -->
+                <div class="flex flex-col gap-2">
+                  <label for="password" class="text-sm font-medium text-zinc-700">Password</label>
+                  <div class="relative w-full">
+                    <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-4 text-indigo-500">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                      </svg>
+                    </div>
+                    <input type="text" id="password"
+                      class="w-full rounded-lg border border-indigo-200 bg-indigo-50/50 px-3 py-2 ps-9 text-sm transition duration-300 ease-in-out focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 placeholder:text-indigo-800/40"
+                      placeholder="Your password" required />
                   </div>
                   <div class="flex justify-between">
                     <div class="flex items-center">
                       <input id="remember-checkbox" type="checkbox"
-                        class="cursor-pointer rounded border border-neutral-200 bg-neutral-100 text-neutral-700 transition duration-300 ease-in-out focus:ring-2 focus:ring-neutral-700" />
+                        class="cursor-pointer rounded border border-indigo-200 bg-indigo-50/50 text-indigo-500 transition duration-300 ease-in-out focus:ring-2 focus:ring-indigo-500" />
                       <label for="remember-checkbox" class="ms-2 text-sm font-medium text-zinc-700">Remember
-                        password</label>
+                        me?</label>
                     </div>
-                    <span class="cursor-pointer text-sm font-semibold text-zinc-700 underline">Forgot password</span>
+                    <a href="#" class="ml-1 text-sm text-indigo-500 underline">Forgot Password
+                    </a>
                   </div>
                 </div>
               </div>
@@ -75,8 +86,12 @@
                 <button
                   class="w-full rounded-lg bg-indigo-500 py-2 text-sm font-medium text-zinc-100 transition duration-300 ease-in-out hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-400">Sign
                   in</button>
-                <span class="text-center text-sm text-zinc-700">Don't have an account? <span
-                    class="ml-1 cursor-pointer font-semibold text-zinc-700 underline">Create account</span></span>
+                <div class="flex flex-col items-center">
+                  <span class="text-center text-sm text-zinc-700">Don't have an account?
+                  </span>
+                  <a href="#" class="ml-1 text-sm text-indigo-500 underline">Create account
+                  </a>
+                </div>
               </div>
             </div>
           </form>
