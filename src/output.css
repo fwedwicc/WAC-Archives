@@ -850,6 +850,38 @@ select{
   z-index: 80;
 }
 
+.order-1{
+  order: 1;
+}
+
+.order-2{
+  order: 2;
+}
+
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
+
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
+.col-span-full{
+  grid-column: 1 / -1;
+}
+
 .-m-1\.5{
   margin: -0.375rem;
 }
@@ -913,6 +945,10 @@ select{
   margin-top: 1rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -974,6 +1010,11 @@ select{
 .size-8{
   width: 2rem;
   height: 2rem;
+}
+
+.size-16{
+  width: 4rem;
+  height: 4rem;
 }
 
 .h-10{
@@ -1044,6 +1085,10 @@ select{
   width: 100%;
 }
 
+.w-12{
+  width: 3rem;
+}
+
 .min-w-60{
   min-width: 15rem;
 }
@@ -1070,6 +1115,10 @@ select{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.max-w-\[90rem\]{
+  max-width: 90rem;
 }
 
 .shrink-0{
@@ -1116,6 +1165,18 @@ select{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-8{
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.grid-cols-9{
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1126,6 +1187,10 @@ select{
 
 .flex-nowrap{
   flex-wrap: nowrap;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -1162,6 +1227,18 @@ select{
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-1\.5{
+  gap: 0.375rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .gap-x-2{
@@ -1466,6 +1543,10 @@ select{
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-2{
@@ -2188,6 +2269,22 @@ select{
     bottom: 2.5rem;
   }
 
+  .md\:order-1{
+    order: 1;
+  }
+
+  .md\:order-2{
+    order: 2;
+  }
+
+  .md\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
   .md\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -2205,8 +2302,28 @@ select{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-8{
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
   .md\:p-8{
     padding: 2rem;
+  }
+
+  .md\:p-12{
+    padding: 3rem;
+  }
+
+  .md\:p-14{
+    padding: 3.5rem;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
+  }
+
+  .md\:p-20{
+    padding: 5rem;
   }
 
   .md\:px-8{
