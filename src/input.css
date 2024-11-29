@@ -1,12 +1,208 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playfair+Display:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  * {
-    font-family: "Inter", serif;
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-blue-50/10;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
+    @apply [&::-webkit-scrollbar]:w-1
+        [&::-webkit-scrollbar-track]:rounded-full
+        [&::-webkit-scrollbar-track]:bg-blue-50
+        [&::-webkit-scrollbar-thumb]:rounded-full
+        [&::-webkit-scrollbar-thumb]:bg-blue-300;
+  }
+  h1 {
+    @apply md:text-4xl text-3xl font-bold;
+  }
+  h2 {
+    @apply md:text-3xl text-2xl font-bold;
+  }
+  h3 {
+    @apply md:text-2xl text-xl font-semibold;
+  }
+  h4 {
+    @apply md:text-xl text-lg font-semibold;
+  }
+  h5 {
+    @apply md:text-lg text-base font-medium;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-gray-700;
+  }
+  p,
+  label {
+    @apply text-gray-700 md:text-base text-sm;
+  }
+}
+
+@layer components {
+  /* ---------------- // Button Component ---------------- */
+  /* Button base */
+  .btn {
+    @apply py-2.5 px-4 inline-flex justify-center items-center gap-2 text-sm font-medium rounded-lg transition duration-300 ease-in-out;
+    &:focus {
+      @apply ring-2 outline-none;
+    }
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+  }
+  /* Primary Variant */
+  .btn-primary {
+    @apply border border-transparent bg-blue-600 text-white;
+    &:hover {
+      @apply bg-blue-700;
+    }
+    &:focus {
+      @apply ring-2 ring-blue-700/50;
+    }
+  }
+  /* Secondary Variant */
+  .btn-secondary {
+    @apply border border-transparent bg-blue-100/30 text-blue-700;
+    &:hover {
+      @apply bg-blue-200/30;
+    }
+    &:focus {
+      @apply ring-2 ring-blue-500/30;
+    }
+  }
+  /* Ghost Variant */
+  .btn-ghost {
+    @apply border border-transparent text-blue-700;
+    &:hover {
+      @apply bg-blue-100/30;
+    }
+    &:focus {
+      @apply ring-2 ring-blue-500/30;
+    }
+  }
+  /* Info Variant */
+  .btn-info {
+    @apply border border-transparent bg-blue-500 text-white;
+    &:hover {
+      @apply bg-blue-500/80;
+    }
+    &:focus {
+      @apply ring-2 ring-blue-500/30;
+    }
+  }
+  /* Success Variant */
+  .btn-success {
+    @apply border border-transparent bg-green-500 text-neutral-50;
+    &:hover {
+      @apply bg-green-500/80 text-white;
+    }
+    &:focus {
+      @apply ring-2 ring-green-500/30;
+    }
+  }
+  /* Danger Variant */
+  .btn-danger {
+    @apply border border-transparent bg-red-500 text-neutral-100;
+    &:hover {
+      @apply bg-red-500/80 text-white;
+    }
+    &:focus {
+      @apply ring-2 ring-red-500/30;
+    }
+  }
+  /* Link */
+  .link {
+    @apply underline text-sm text-blue-600;
+  }
+  /* ---------------- // Button Component ---------------- */
+  /* ---------------- Input Component ---------------- */
+  /* Default Input */
+  .default-input {
+    @apply py-2.5 px-4 block w-full bg-blue-50/20 border-blue-100 rounded-lg text-sm placeholder:text-gray-400 transition duration-300 ease-in-out;
+    &:focus {
+      @apply border-blue-500 ring-blue-500;
+    }
+    &:disabled {
+      @apply pointer-events-none;
+    }
+  }
+  /* Input Label */
+  .input-label {
+    @apply block text-sm font-medium;
+  }
+  /* Select Input */
+  .select-input {
+    @apply py-2.5 px-4 pe-9 block w-full bg-blue-50/20 border-blue-100 rounded-lg text-sm transition duration-300 ease-in-out;
+    &:focus {
+      @apply border-blue-500 ring-blue-500;
+    }
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+  }
+  /* Checkbox Input */
+  .checkbox-input {
+    @apply shrink-0 bg-blue-50/40 border-blue-100 rounded text-blue-600  transition duration-300 ease-in-out;
+    &:focus {
+      @apply ring-blue-500;
+    }
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+  }
+  /* Radio Input */
+  .radio-input {
+    @apply shrink-0 bg-blue-50/70 border-blue-100 rounded-full text-blue-600 transition duration-300 ease-in-out;
+    &:focus {
+      @apply ring-blue-500;
+    }
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+  }
+  /* File Input */
+  .file-input {
+    @apply block w-full bg-blue-50/20 border border-blue-100 rounded-lg text-sm transition duration-300 ease-in-out;
+    &:focus {
+      @apply z-10 border-blue-500 ring-blue-500;
+    }
+    &:disabled {
+      @apply opacity-50 pointer-events-none;
+    }
+  }
+  .grouped-radio {
+    @apply inline-flex cursor-pointer flex-col items-start gap-4 rounded-lg border border-blue-100 p-4 transition has-[:checked]:bg-blue-50 has-[:checked]:border-blue-200;
+    &:hover {
+      @apply bg-blue-50;
+    }
+  }
+  /* ---------------- // Input Component ---------------- */
+  /* Sidebar Nav Button */
+  .side-nav-btn {
+    @apply flex w-full items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-700 transition duration-300;
+    &:focus {
+      @apply outline-none bg-gray-100;
+    }
+    &:hover {
+      @apply bg-blue-500/5;
+    }
+  }
+
+  .custom-scrollbar {
+    @apply [&::-webkit-scrollbar]:w-1
+        [&::-webkit-scrollbar-track]:rounded-full
+        [&::-webkit-scrollbar-track]:my-6
+        [&::-webkit-scrollbar-track]:bg-blue-50
+        [&::-webkit-scrollbar-thumb]:rounded-full
+        [&::-webkit-scrollbar-thumb]:bg-blue-300;
   }
 }
