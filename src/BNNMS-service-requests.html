@@ -15,7 +15,9 @@
         <div class="p-1.5 min-w-full inline-block align-middle">
           <div
             class="border border-blue-600/10 bg-white shadow-md shadow-blue-500/5 rounded-lg divide-y divide-blue-100/70">
+            <!-- Header with filters -->
             <div class="py-3 px-4 flex gap-3 items-center">
+              <!-- Search -->
               <div class="relative max-w-xs">
                 <label class="sr-only">Search</label>
                 <input type="text" id="search" class="pl-9 block w-full default-input" placeholder="Search for names">
@@ -28,69 +30,77 @@
                 </div>
               </div>
               <!-- Application Status Filter -->
-              <div class="hs-dropdown relative inline-flex" data-hs-dropdown-auto-close="inside">
+              <div class="hs-dropdown relative inline-flex">
                 <button id="hs-dropdown-item-checkbox" type="button"
-                  class="hs-dropdown-toggle btn btn-secondary py-2 px-4" aria-haspopup="menu" aria-expanded="false"
-                  aria-label="Dropdown">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-4">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z" />
-                  </svg>
-                  Application Status
-                  <svg class="hs-dropdown-open:rotate-180 transition duration-300 ease-in-out size-4"
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
+                  class="hs-dropdown-toggle btn btn-secondary py-2 px-4">
+                  Status
                 </button>
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-lg shadow-blue-500/5 border border-blue-600/10 rounded-lg p-2 space-y-0.5 mt-2"
-                  role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-item-checkbox">
-                  <div class="flex gap-x-2 py-2 px-3 rounded-lg hover:bg-blue-100/40 transition duration-300">
-                    <input id="status-all" name="application-status" type="radio" value="All"
-                      class="mt-0.5 shrink-0 radio-input" checked>
-                    <label for="status-all">
-                      <span class="block text-sm font-semibold text-gray-800">All</span>
-                      <span class="block text-sm text-gray-600">Both approved and declined</span>
-                    </label>
+                <div class="hs-dropdown-menu min-w-60 bg-white shadow-lg border rounded-lg p-2 mt-2 hidden">
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="status-all" name="application-status" type="radio" value="All" class="radio-input"
+                      checked>
+                    <label for="status-all" class="text-sm">All</label>
                   </div>
-                  <div class="flex gap-x-2 py-2 px-3 rounded-lg hover:bg-blue-100/40 transition duration-300">
-                    <input id="approved" name="application-status" type="radio" value="Approved"
-                      class="mt-0.5 shrink-0 radio-input">
-                    <label for="approved">
-                      <span class="block text-sm font-semibold text-gray-800">Approved</span>
-                      <span class="block text-sm text-gray-600">All approved applications</span>
-                    </label>
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="pending" name="application-status" type="radio" value="Pending" class="radio-input">
+                    <label for="pending" class="text-sm">Pending</label>
                   </div>
-                  <div class="flex gap-x-2 py-2 px-3 rounded-lg hover:bg-blue-100/40 transition duration-300">
-                    <input id="declined" name="application-status" type="radio" value="Declined"
-                      class="mt-0.5 shrink-0 radio-input">
-                    <label for="declined">
-                      <span class="block text-sm font-semibold text-gray-800">Declined</span>
-                      <span class="block text-sm text-gray-600">All declined applications</span>
-                    </label>
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="approved" name="application-status" type="radio" value="Approved" class="radio-input">
+                    <label for="approved" class="text-sm">Approved</label>
                   </div>
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="denied" name="application-status" type="radio" value="Denied" class="radio-input">
+                    <label for="denied" class="text-sm">Denied</label>
+                  </div>
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="claimed" name="application-status" type="radio" value="Claimed" class="radio-input">
+                    <label for="claimed" class="text-sm">Claimed</label>
+                  </div>
+                  <div class="flex items-center gap-x-2 py-2 px-3 hover:bg-blue-100">
+                    <input id="unclaimed" name="application-status" type="radio" value="Unclaimed" class="radio-input">
+                    <label for="unclaimed" class="text-sm">Unclaimed</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between">
+                  <button id="reset-btn" class="btn">Reset Filters</button>
                 </div>
               </div>
             </div>
 
-            <!-- Residency Status Filter -->
-            <div class="p-4">
-              <label for="home-owner"
+            <!-- Service Type Filters -->
+            <div class="p-4 flex gap-4">
+              <label for="clearance"
                 class="btn has-[:checked]:bg-blue-50/90 hover:bg-blue-50/50 has-[:checked]:text-blue-600 has-[:checked]:border-blue-200 cursor-pointer">
                 <div class="flex items-center gap-3">
-                  <input id="home-owner" type="radio" name="residency-status" value="Homeowner"
-                    class="radio-input hidden" checked />
-                  <span class="font-medium">Home Owner</span>
+                  <input id="clearance" type="radio" name="service-type" value="Clearance" class="radio-input hidden"
+                    checked />
+                  <span class="font-medium">Barangay Clearance</span>
                 </div>
               </label>
-              <label for="renter-tenant"
+              <label for="certificate"
                 class="btn has-[:checked]:bg-blue-50/90 hover:bg-blue-50/50 has-[:checked]:text-blue-600 has-[:checked]:border-blue-200 cursor-pointer">
                 <div class="flex items-center gap-3">
-                  <input id="renter-tenant" type="radio" name="residency-status" value="Renter/Tenant"
+                  <input id="certificate" type="radio" name="service-type" value="Certificate"
                     class="radio-input hidden" />
-                  <span class="font-medium">Renter/Tenant</span>
+                  <span class="font-medium">Barangay Certificate</span>
+                </div>
+              </label>
+              <label for="indigency"
+                class="btn has-[:checked]:bg-blue-50/90 hover:bg-blue-50/50 has-[:checked]:text-blue-600 has-[:checked]:border-blue-200 cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <input id="indigency" type="radio" name="service-type" value="Indigency" class="radio-input hidden" />
+                  <span class="font-medium">Certificate of Indigency</span>
+                </div>
+              </label>
+              <label for="identification"
+                class="btn has-[:checked]:bg-blue-50/90 hover:bg-blue-50/50 has-[:checked]:text-blue-600 has-[:checked]:border-blue-200 cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <input id="identification" type="radio" name="service-type" value="Identification"
+                    class="radio-input hidden" />
+                  <span class="font-medium">Barangay Identification</span>
                 </div>
               </label>
             </div>
@@ -100,34 +110,26 @@
               <table id="resident-table" class="min-w-full divide-y divide-blue-100/70">
                 <thead class="bg-blue-50/50">
                   <tr>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">User ID
-                    </th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Name</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Residency
-                      Status</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Created At
-                    </th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Application
-                      Status</th>
-                    <th scope="col" class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Action</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Permit Number</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Applicant Name</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Service</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Cost Status</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Business Type</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Date of Claim</th>
+                    <th class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase">Status</th>
+                    <th class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase">Actions</th>
                   </tr>
                 </thead>
-                <tbody id="table-body" class="divide-y divide-blue-100/70">
-                  <!-- Data inserted dynamically -->
-                </tbody>
+                <tbody id="table-body"></tbody>
               </table>
             </div>
 
             <!-- Pagination -->
             <div class="py-3 px-4 flex justify-between items-center">
-              <span id="showing-text" class="text-sm text-gray-600">Showing 10 of 20</span>
-              <nav class="flex items-center space-x-1" aria-label="Pagination">
-                <button id="prev-btn" type="button" class="btn btn-secondary" aria-label="Previous" disabled>
-                  <span aria-hidden="true">Previous</span>
-                </button>
-                <button id="next-btn" type="button" class="btn btn-secondary" aria-label="Next">
-                  <span aria-hidden="true">Next</span>
-                </button>
+              <span id="showing-text" class="text-sm">Showing 0 of 0</span>
+              <nav class="flex items-center space-x-1">
+                <button id="prev-btn" type="button" class="btn" disabled>Previous</button>
+                <button id="next-btn" type="button" class="btn" disabled>Next</button>
               </nav>
             </div>
           </div>
@@ -135,220 +137,152 @@
       </div>
     </div>
   </section>
-  <script src="../node_modules/preline/dist/preline.js"></script>
+  <script src="./node_modules/preline/dist/preline.js"></script>
   <script>
-    const Data = [{
-      userId: 1,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 2,
-      name: "marga",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
-    {
-      userId: 3,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 1,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 2,
-      name: "marga",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
-    {
-      userId: 3,
-      name: "John Brown",
-      resStatus: "Renter/Tenant",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 1,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 2,
-      name: "marga",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
-    {
-      userId: 3,
-      name: "John Brown",
-      resStatus: "Renter/Tenant",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 1,
-      name: "John Brown",
-      resStatus: "Renter/Tenant",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 2,
-      name: "marga",
-      resStatus: "Renter/Tenant",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
-    {
-      userId: 3,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 1,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Approved"
-    },
-    {
-      userId: 2,
-      name: "marga",
-      resStatus: "Renter/Tenant",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
-    {
-      userId: 3,
-      name: "John Brown",
-      resStatus: "Homeowner",
-      createdAt: "ssss",
-      appStatus: "Declined"
-    },
+
+    // Sample dataset for demonstration
+    const data = [
+      { permitNumber: "001", name: "John Doe", service: "Barangay Clearance", costStatus: "Approved", businessType: "Retail", dateOfClaim: "2024-11-01", status: "Pending" },
+      { permitNumber: "002", name: "Jane Smith", service: "Barangay Certificate", costStatus: "Denied", businessType: "Services", dateOfClaim: "2024-11-10", status: "Approved" },
+      { permitNumber: "003", name: "Mark Johnson", service: "Certificate of Indigency", costStatus: "Approved", businessType: "Wholesale", dateOfClaim: "2024-11-15", status: "Denied" },
+      // Add more data as needed
     ];
 
-    let filteredData = Data.filter(item => item.resStatus === "Homeowner"); // Homeowner default
+    // Pagination variables
     let currentPage = 1;
-    const rowsPerPage = 10;
+    const rowsPerPage = 5;
+    let filteredData = data; // Initially, no filters applied, so filteredData = full data
 
-    function updateTable(page) {
-      const startIndex = (page - 1) * rowsPerPage;
-      const endIndex = startIndex + rowsPerPage;
-      const pageData = filteredData.slice(startIndex, endIndex);
+    // DOM elements
+    const tableBody = document.getElementById("table-body");
+    const showingText = document.getElementById("showing-text");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const searchInput = document.getElementById("search");
+    const serviceFilters = document.querySelectorAll("input[name='service-type']");
+    const statusFilters = document.querySelectorAll("input[name='application-status']");
 
-      const tableBody = document.getElementById('table-body');
-      tableBody.innerHTML = '';
-      pageData.forEach(item => {
-        const row = `
-        <tr>
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">${item.userId}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">${item.name}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">${item.resStatus}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">${item.createdAt}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">${item.appStatus}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-            <button class="inline-flex items-center gap-x-2 px-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-700 hover:bg-blue-50/50 transition duration-300 ease-in-out" onclick="openResidentApplicationModal()">
-              View
-            </button>
-          </td>
-        </tr>
-      `;
-        tableBody.innerHTML += row;
+    // Function to render the table
+    function renderTable(data) {
+      tableBody.innerHTML = "";
+      const startIndex = (currentPage - 1) * rowsPerPage;
+      const paginatedData = data.slice(startIndex, startIndex + rowsPerPage);
+
+      if (paginatedData.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="8" class="text-center py-4">No data found</td></tr>`;
+        return;
+      }
+
+      paginatedData.forEach((row) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+      <td class="px-6 py-3">${row.permitNumber}</td>
+      <td class="px-6 py-3">${row.name}</td>
+      <td class="px-6 py-3">${row.service}</td>
+      <td class="px-6 py-3">${row.costStatus}</td>
+      <td class="px-6 py-3">${row.businessType}</td>
+      <td class="px-6 py-3">${row.dateOfClaim}</td>
+      <td class="px-6 py-3">${row.status}</td>
+      <td class="px-6 py-3 text-end"><button class="btn">Details</button></td>
+    `;
+        tableBody.appendChild(tr);
       });
 
-      const showingText = document.getElementById('showing-text');
-      showingText.textContent = `Showing ${Math.min(endIndex, filteredData.length)} of ${filteredData.length}`;
-
-      updatePagination();
+      updatePaginationText(data);
     }
 
-    function updatePagination() {
-      const totalPages = Math.ceil(filteredData.length / rowsPerPage);
-      document.getElementById('prev-btn').disabled = currentPage === 1;
-      document.getElementById('next-btn').disabled = currentPage === totalPages;
+    // Function to update the "Showing X of Y" text
+    function updatePaginationText(data) {
+      const start = (currentPage - 1) * rowsPerPage + 1;
+      const end = Math.min(currentPage * rowsPerPage, data.length);
+      showingText.textContent = `Showing ${start}-${end} of ${data.length}`;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage * rowsPerPage >= data.length;
     }
 
-    // Residency status filter logic
-    document.querySelectorAll('input[name="residency-status"]').forEach(input => {
-      input.addEventListener('change', function () {
-        const selectedStatus = this.value;
+    // Function to apply filters
+    function applyFilters() {
+      const searchValue = searchInput.value.toLowerCase();
+      const selectedService = Array.from(serviceFilters).find((filter) => filter.checked)?.value || null;
+      const selectedStatus = Array.from(statusFilters).find((filter) => filter.checked)?.value || "All";
 
-        // Update the residency status filter
-        filteredData = Data.filter(item => item.resStatus === selectedStatus);
-
-        currentPage = 1;
-        applyFilters();
+      filteredData = data.filter((row) => {
+        const matchesSearch = row.name.toLowerCase().includes(searchValue);
+        const matchesService = selectedService ? row.service === selectedService : true;
+        const matchesStatus = selectedStatus === "All" || row.status === selectedStatus;
+        return matchesSearch && matchesService && matchesStatus;
       });
-    });
 
+      currentPage = 1; // Reset to the first page whenever filters are applied
+      renderTable(filteredData);
+    }
 
-    // Application status filter logic
-    document.querySelectorAll('input[name="application-status"]').forEach(input => {
-      input.addEventListener('change', function () {
-        currentPage = 1;
-        applyFilters();
-      });
-    });
-
-    // Search filter logic
-    document.getElementById('search').addEventListener('input', function (e) {
-      currentPage = 1;
-      applyFilters();
-    });
-
-
-    document.getElementById('prev-btn').addEventListener('click', function () {
+    // Event listeners
+    searchInput.addEventListener("input", applyFilters);
+    serviceFilters.forEach((filter) => filter.addEventListener("change", applyFilters));
+    statusFilters.forEach((filter) => filter.addEventListener("change", applyFilters));
+    prevBtn.addEventListener("click", () => {
       if (currentPage > 1) {
         currentPage--;
-        updateTable(currentPage);
+        renderTable(filteredData);
       }
     });
-
-    document.getElementById('next-btn').addEventListener('click', function () {
-      const totalPages = Math.ceil(filteredData.length / rowsPerPage);
-      if (currentPage < totalPages) {
+    nextBtn.addEventListener("click", () => {
+      if (currentPage * rowsPerPage < filteredData.length) {
         currentPage++;
-        updateTable(currentPage);
+        renderTable(filteredData);
       }
     });
 
-    // Centralized filtering function
-    function applyFilters() {
-      const selectedResidency = document.querySelector('input[name="residency-status"]:checked').value;
-      const selectedAppStatus = document.querySelector('input[name="application-status"]:checked')?.value;
-      const query = document.getElementById('search').value.toLowerCase();
+    // Initialize table with all applications
+    renderTable(filteredData);
 
-      filteredData = Data.filter(item => item.resStatus === selectedResidency);
+    // Add a reference to the reset button
+    const resetBtn = document.getElementById("reset-btn");
 
-      if (selectedAppStatus && selectedAppStatus !== "All") {
-        filteredData = filteredData.filter(item => item.appStatus === selectedAppStatus);
-      }
+    // Function to reset filters
+    function resetFilters() {
+      // Clear search input
+      searchInput.value = "";
 
-      if (query) {
-        filteredData = filteredData.filter(item => item.name.toLowerCase().includes(query));
-      }
+      // Reset service filters
+      serviceFilters.forEach((filter) => (filter.checked = false));
 
-      updateTable(currentPage);
+      // Reset status filters
+      statusFilters.forEach((filter) => (filter.checked = false));
+
+      // Reset filtered data to full dataset
+      filteredData = data;
+
+      // Reset to the first page
+      currentPage = 1;
+
+      // Re-render the table
+      renderTable(filteredData);
     }
 
-    updateTable(currentPage); // Initial render
+    // Add event listener to the reset button
+    resetBtn.addEventListener("click", resetFilters);
+
+    // Initialize table with all applications
+    renderTable(filteredData);
+    // Update status filter logic
+    statusFilters.forEach((statusInput) => {
+      statusInput.addEventListener("change", () => {
+        currentPage = 1; // Reset to the first page when status filter changes
+        const selectedStatus = document.querySelector('input[name="application-status"]:checked')?.value;
+
+        if (selectedStatus && selectedStatus !== "All") {
+          filteredData = data.filter((item) => item.status === selectedStatus);
+        } else {
+          filteredData = [...data]; // Show all if "All" is selected
+        }
+
+        renderTable(filteredData);
+      });
+    });
+
+
   </script>
 </body>
 
